@@ -3,7 +3,7 @@ CREATE DATABASE movies_db;
 
 USE movies_db;
 
-CREATE RABLE movies (
+CREATE TABLE movies (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   movie_NAME VARCHAR(100) NOT NULL
 );
@@ -16,3 +16,4 @@ CREATE TABLE reviews (
   REFERENCES movies(id)
   ON DELETE SET NULL
 );
+
